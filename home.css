@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Wraps the menu at the top to the left*/
+body {
+    background-color: lightgrey;
+    font-size: 1em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    line-height: 1.4;
+  }
+
+ul{
+    background-color: darkgrey;
+    overflow: hidden;
+}
+
+/*styling for navigation menu*/
+ul li{
+    display: block;
+    padding: 14px 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*text styling for navigation menu*/
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    text-shadow: 0.07em 0 white,
+    0 0.07em white,
+  -0.07em 0 white,
+  0 -0.07em white;
+}
+
+/* hover feature for navigation menu*/
+ul li a:hover{
+    background-color: white;
+}
+
+/* hamburger menu styles */
+nav img{
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+
+ nav.horizontal ul li {
+    line-height: 2em;
+    padding-left: 10px;
+    width: 100%;
+ }
+ 
+ nav.horizontal::after {
+    content: "";
+    display: table;
+ }
+
+
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 480px){
+    footer{
+        order: 100;
+    }
+
+    nav.horizontal ul{
+        display: none;
+    }
+
+    a#navicon:hover+ul, nav.horizontal ul:hover{
+        display: block;
+    }
+}
+
+/* Desktop styles */
+
+@media only screen and (min-width: 481px){
+    a#navicon{
+        display: none;
+    }
+
+    nav.horizontal ul{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: nowrap;
+        flex: nowrap;
+
+    }
+
+    nav.horizontal ul li{
+        text-align: center;
+        flex: 1 1 auto;
+    }
+}
+
