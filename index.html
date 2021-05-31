@@ -5,18 +5,27 @@
     <meta charset= "utf-8" />
     <meta name = "viewport" content = "width=device-width, initial-scale=1" />
     <link href = "home.css" rel = "stylesheet" media = "screen" />
-    <script src= "nav.js"></script>
+    <link href= "https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+    <link href= "https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>    
 <body>
-    <nav class = "horizontal">
-        <a href =#menu id = "navicon"><img src = "3005_navicon-hamburger-icon.png" alt = "" /></a>
-        <ul>
-            <li><a href = "index.html"><strong>Home</strong></a></li>
-            <li><a href= "food.html"><strong>Food blog</strong></a></li>
-            <li><a href= "travel.html"><strong>Travel blog</strong></a></li>
-            <li><a href= "contact.html"><strong>Contact me</strong></a></li>
+    <nav>
+        <div class = "logo">
+            <h4>The Tireless Explorer</h4>
+        </div>
+        <ul class = "menu-links">
+            <li><a href = "index.html">Home</a></li>
+            <li><a href= "food.html">Food blog</a></li>
+            <li><a href= "travel.html">Travel blog</a></li>
+            <li><a href= "contact.html">Contact me</a></li>
         </ul>
-        <a href="javascript:void(0);" class="icon" onclick="navClick()"><i class = "fa fa-bars"></i></a>
+        <div class= "mobile">
+            <div class= "line1"></div>
+            <div class= "line2"></div>
+            <div class= "line3"></div>
+        </div>
     </nav>
+
+    <script src= "nav.js"></script>
 </body>
 </html>
