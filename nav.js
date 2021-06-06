@@ -5,11 +5,18 @@ const navClick = () => {
    
     mobile.addEventListener("click", () => {
         nav.classList.toggle("menu-active");
-    });
 
-    menuLinks.forEach((link, index) => {
-        console.log(index);
+
+        menuLinks.forEach((link, index) => {
+            if (link.style.animation){
+                link.style.animation = '';
+            }
+            else{   
+            link.style.animation = `menuLinkFade 0.5 ease forwards ${ index / 7 + 1.5}s`;
+            }
+        });
     });
+        
 }
 
 navClick();
